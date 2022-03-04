@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
@@ -22,7 +26,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [AppRoutingModule, BrowserModule, KeycloakAngularModule],
+  imports: [AppRoutingModule, BrowserModule, KeycloakAngularModule, MatToolbarModule, BrowserAnimationsModule],
   providers: [
     {
       provide: APP_INITIALIZER,
