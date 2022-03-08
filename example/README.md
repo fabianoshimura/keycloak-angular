@@ -9,7 +9,7 @@ To start the Keycloak server run `docker-compose up` in the same directory as th
 Once the Keycloak server is up and running you can start the client application by running `ng serve` and navigating to `http://localhost:4200/` just like any other Angular CLI application.
 
 
-
+ng add @angular/materia
 
 Endereços:
 Gerenciamento de conta:

@@ -37,6 +37,10 @@
 </ng-container>
 
 <ng-container *ngIf="userProfile">
+
+  
+
+  
   
   <div class="microsservicos">
     
@@ -45,24 +49,11 @@
         <a id="usuario" class="usuario" target="_blank" rel="noopener">      
               
           <tr *ngIf="userProfile.username">
-            <th scope="row">Seja bem vindo(a)</th>
-            <td>{{ userProfile.username }}</td>
+            <th scope="row">Seja bem vindo(a) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <td>{{  userProfile.username }}</td>
           </tr>
-
-          <tr *ngIf="userProfile.email">
-            <th scope="row">E-mail</th>
-            <td>{{ userProfile.email }}</td>
-          </tr>
-
-          <tr *ngIf="userRoleAdmin">
-            <th scope="row">Seu perfil é</th>
-            Administrador
-          </tr>
-
-          <tr *ngIf="!userRoleAdmin">
-            <th scope="row">Seu perfil é</th>
-            Público
-          </tr>
+        
+          
           
         </a>      
     </div>
